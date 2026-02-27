@@ -1,21 +1,13 @@
-# Stat Arb
+# STAT-ARB
 
-A statistical arbitrage research platform built with Next.js.
+Most trading strategies try to predict where prices go. Statistical arbitrage doesn't. It finds two assets that move together, waits for them to diverge, and bets on convergence. No forecast required -- just the assumption that a historically stable relationship will hold.
 
-This project will be a browser-based environment for exploring mean-reversion strategies, cointegration analysis, and pairs trading across financial instruments. The goal is to make quantitative trading concepts tangible through interactive visualization rather than static textbook formulas.
+That's what makes it elegant: it's grounded in cointegration tests and mean-reversion statistics rather than speculation about the future.
 
-## Planned
+This project is a research platform for building, testing, and visualizing stat arb strategies. Pairs selection via cointegration analysis. Spread modeling. Entry/exit signal generation. Backtesting with realistic assumptions about slippage and costs.
 
-- Pairs identification through cointegration testing (Engle-Granger, Johansen)
-- Spread visualization with Bollinger Bands and z-score overlays
-- Backtest engine for mean-reversion entry/exit signals
-- Historical performance attribution
-- Risk metrics (Sharpe, max drawdown, win rate)
+Early stage -- the repo is scaffolded but the research tooling isn't built yet.
 
-## Tech
-
-Next.js 16, React 19, TypeScript, Tailwind CSS 4
-
-## Status
-
-Scaffolded and ready for implementation. Part of a quantitative finance toolkit alongside [monte-carlo](https://github.com/sisiphamus/monte-carlo), [black-scholes-lab](https://github.com/sisiphamus/black-scholes-lab), [plasma](https://github.com/sisiphamus/plasma), and [neutron](https://github.com/sisiphamus/neutron).
+```bash
+npm install && npm run dev
+```
